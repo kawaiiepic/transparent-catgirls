@@ -1,0 +1,132 @@
+/**
+ * @name transparent-catgirls
+ * @author cannibalmaid
+ * @version 1.0.0
+ * @description Transparent theme by @Gibbu which is slightly modified
+ * @source https://github.com/Gibbu/BetterDiscord-Themes/tree/master/FrostedGlass
+ * @website https://gibbu.me
+*/
+
+ @import url('https://gibbu.github.io/BetterDiscord-Themes/FrostedGlass/base.css');
+ @import url('https://discord-custom-covers.github.io/usrbg/snippets/userPopouts.css');
+ @import url('https://discord-custom-covers.github.io/usrbg/snippets/modals.css');
+ @import url('https://monstrousdev.github.io/themes/addons/user-tags.css');
+ @import url('https://gibbu.github.io/BetterDiscord-Themes/addons/windows-titlebar.css');
+ @import url('https://gibbu.github.io/BetterDiscord-Themes/HorizontalServerlist/base.css');
+ @import url('https://discordstyles.github.io/RadialStatus/base.css');
+ @import url('https://codedotspectra.github.io/themes/core/badges.css');
+ @import url('https://codedotspectra.github.io/themes/core/hljs.css');
+
+ :root {
+
+  /* Popout & Modal variables */
+  --popout-modal-blur: 5px; /* Blur intensity of --popout-modal-image | Must end in px | DEFAULT: 5px */
+  --popout-modal-size: cover; /* Size of the popout/modal image | DEFAUT: cover | OPTIONS: cover, contain */
+  --popout-modal-position: center; /* Position of popout/modal image | DEAFULT: center | OPTIONS: top, right, bottom, left, center */
+
+  /* Brightness variables */
+  --serverlist-brightness: 0.6; /* Brightness for serverlist | 0 - 1 (decimals allowed) | DEFAULT: 0.8 */
+  --left-brightness: 0.5; /* Channels and DM list brightness | 0 - 1 (decimals allowed) | DEFAULT: 0.8 */
+  --middle-brightness: 0.5; /* Chat brightness | 0 - 1 (decimals allowed) | DEFAULT: 0.6 */
+  --right-brightness: 0; /* Members and Now Playing brightness | 0 - 1 (decimals allowed) | DEFAULT: 0 */
+  --popout-modal-brightness: 0.5; /* Brightness for popouts and modals | 0 - 1 (decimals allowed) | DEFAULT: 0.75 */
+
+  /* Other variables */
+  --scrollbar-colour: rgba(255,255,255,0.05); /* DEFAULT: rgba(255,255,255,0.05) */
+  --link-colour: #00b0f4; /* DEFAULT: #00b0f4 */
+  --show-gift-gif-buttons: none; /* Show buttons: block | Hide buttons: none | DEFAULT: none */
+
+  /* Do not touch */
+  --update-notice-1: none;
+}
+
+:root {
+  --TB-top: calc(var(--server-container) + var(--window-padding));
+  --TB-tr-roundness: var(--window-roundness);
+  --TB-position-top: var(--TB-top, var(--window-padding));
+  --TB-position-right: var(--window-padding);
+  --tint: rgba(var(--tint-colour), var(--tint-brightness));
+  --white-half: rgba(47, 22, 190, 0.712);
+  --white: rgba(255, 255, 255, 0.055);
+  --white-double: rgba(105, 105, 105, 0.89);
+  --white-triple: rgba(255, 255, 255, 0.15);
+  --gradient: linear-gradient(var(--gradient-direction), rgb(var(--gradient-primary)), rgb(var(--gradient-secondary)));
+  --gradient-20: linear-gradient(var(--gradient-direction), rgba(var(--gradient-primary), 0.2), rgba(var(--gradient-secondary), 0.2));
+  --gradient-50: linear-gradient(var(--gradient-direction), rgba(var(--gradient-primary), 0.5), rgba(var(--gradient-secondary), 0.5));
+  --gradient-90: linear-gradient(var(--gradient-direction), rgba(var(--gradient-primary), 0.9), rgba(var(--gradient-secondary), 0.9));
+  --text-shadow: 1;
+  --chat-embed: var(--background-secondary);
+  --discord-green: 67,181,129;
+  --discord-yellow: 219,171,9;
+  --discord-red: 215,58,73;
+  --discord-purple: 89,54,149;
+  --discord-invisible: 117,128,142;
+  --discord-nitro: 255,115,250;
+  --discord-blurple: 114,137,218;
+  --discord-spotify: 29,185,84;
+  --discord-twitch: 89,54,149;
+  --discord-xbox: 16,124,16;
+  --version: "Frosted Glass 2.0.8";
+
+  /* Radial Status */
+  --rs-small-spacing: 2px;
+  --rs-large-spacing: 3px;
+  --rs-width: 2px;
+  --rs-avatar-shape: 50%;
+  --rs-online-color: #43b581;
+  --rs-idle-color: #faa61a;
+  --rs-dnd-color: #f04747;
+  --rs-offline-color: #636b75;
+  --rs-streaming-color: #643da7;
+  --rs-invisible-color: #747f8d;
+}
+
+.theme-dark {
+  --header-primary: #fff;
+  --header-secondary: #bbb;
+  --text-normal: #fff;
+  --text-default: #ddd;
+  --text-muted: #aaa;
+  --text-link: #00b0f4;
+  --channels-default: #ddd;
+  --interactive-normal: #bbb;
+  --interactive-hover: #eee;
+  --interactive-active: #fff;
+  --interactive-muted: #777;
+  --background-primary: transparent;
+  --background-secondary: rgba(0,0,0,0.3);
+  --background-secondary-alt: transparent;
+  --background-tertiary: transparent;
+  --background-accent: #4f545c;
+  --background-floating: transparent;
+  --background-mobile-primary: #36393f;
+  --background-mobile-secondary: #2f3136;
+  --background-modifier-hover: rgba(255,255,255,0.05);
+  --background-modifier-active: rgba(255,255,255,0.07);
+  --background-modifier-selected: rgba(255,255,255,0.1);
+  --background-modifier-accent: rgba(255,255,255,0.1);
+  --background-mentioned: rgba(250,166,26,0.05);
+  --background-mentioned-hover: rgba(250,166,26,0.08);
+  --background-message-hover: rgba(4,4,5,0.07);
+  --elevation-stroke: 0 0 0 1px rgba(4,4,5,0.15);
+  --elevation-low: 0 1px 0 rgba(4,4,5,0.2),0 1.5px 0 rgba(6,6,7,0.05),0 2px 0 rgba(4,4,5,0.05);
+  --elevation-medium: 0 4px 4px rgba(0,0,0,0.16);
+  --elevation-high: 0 8px 16px rgba(0,0,0,0.24);
+  --logo-primary: #fff;
+  --guild-header-text-shadow: 0 1px 1px rgba(0,0,0,0.4);
+  --channeltextarea-background: rgba(255,255,255,0.05);
+  --activity-card-background: #202225;
+  --textbox-markdown-syntax: #8e9297;
+  --deprecated-card-bg: rgba(0,0,0,0.3);
+  --deprecated-card-editable-bg: rgba(0,0,0,0.3);
+  --deprecated-store-bg: #36393f;
+  --deprecated-quickswitcher-input-background: var(--channeltextarea-background);
+  --deprecated-quickswitcher-input-placeholder: rgba(255,255,255,0.5);
+  --deprecated-text-input-bg: rgba(0,0,0,0.1);
+  --deprecated-text-input-border: rgba(0,0,0,0.3);
+  --deprecated-text-input-border-hover: #040405;
+  --deprecated-text-input-border-disabled: #202225;
+  --deprecated-text-input-prefix: #dcddde;
+  --text-link: var(--link-colour);
+}
+
