@@ -95,17 +95,17 @@
   }
   
 .theme-dark {
-  --header-primary: #fff;
+  --header-primary: #f7a8b8;
   --header-secondary: #bbb;
   --text-normal: #fff;
   --text-default: #ddd;
   --text-muted: #aaa;
-  --text-link: #00b0f4;
-  --channels-default: #ddd;
+  --text-link: #55cdfc;
+  --channels-default: rgb(161, 161, 161);
   --interactive-normal: #bbb;
   --interactive-hover: #eee;
-  --interactive-active: #fff;
-  --interactive-muted: #777;
+  --interactive-active:#f7a8b8;
+  --interactive-muted: rgb(95, 95, 95);
   --background-primary: transparent;
   --background-secondary: rgba(0,0,0,0.3);
   --background-secondary-alt: transparent;
@@ -140,7 +140,7 @@
   --deprecated-text-input-border-hover: #040405;
   --deprecated-text-input-border-disabled: #202225;
   --deprecated-text-input-prefix: #dcddde;
-  --text-link: var(--link-colour);
+  --text-link: #55cdfc;
 }
 
 .theme-dark{
