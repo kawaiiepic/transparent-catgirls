@@ -80,7 +80,20 @@
   --rs-streaming-color: #643da7;
   --rs-invisible-color: #747f8d;
 }
-
+  
+  
+  .fullscreen-bg video,
+  .fullscreen-bg-video{
+    position: fixed;
+    top: 50%; left: 50%;
+    z-index: -100;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+  }
+  
 .theme-dark {
   --header-primary: #fff;
   --header-secondary: #bbb;
@@ -129,4 +142,13 @@
   --deprecated-text-input-prefix: #dcddde;
   --text-link: var(--link-colour);
 }
+
+.theme-dark{
+    /*change last value from 0.0-1.0 to adjust brightness*/
+  --background-tertiary: rgba(25, 25, 25, 0.4); 
+  --background-primary: transparent;
+  --background-secondary: transparent;
+  --background-secondary-alt: transparent;
+  --channeltextarea-background: transparent;
+  }
 
