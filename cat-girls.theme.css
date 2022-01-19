@@ -7,81 +7,31 @@
  * @website https://gibbu.me
 */
 
- @import url('https://gibbu.github.io/BetterDiscord-Themes/FrostedGlass/base.css');
- @import url('https://discord-custom-covers.github.io/usrbg/snippets/userPopouts.css');
- @import url('https://discord-custom-covers.github.io/usrbg/snippets/modals.css');
- @import url('https://monstrousdev.github.io/themes/addons/user-tags.css');
- @import url('https://gibbu.github.io/BetterDiscord-Themes/addons/windows-titlebar.css');
- @import url('https://gibbu.github.io/BetterDiscord-Themes/HorizontalServerlist/base.css');
- @import url('https://discordstyles.github.io/RadialStatus/base.css');
- @import url('https://codedotspectra.github.io/themes/core/badges.css');
- @import url('https://codedotspectra.github.io/themes/core/hljs.css');
+ @import url("https://discordstyles.github.io/HorizontalServerList/dist/HorizontalServerList.css");
+ @import url('https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css');
 
  :root {
+   --rs-small-spacing: 0px; /* Gap between avatar and status for members list/dms | MUST end in px */
+   --rs-medium-spacing: 0px; /* Gap between avatar and status for User popout | MUST end in px */
+   --rs-large-spacing: 0px; /* Gap between avatar and status for User profiles | MUST end in px */
 
-  /* Popout & Modal variables */
-  --popout-modal-blur: 5px; /* Blur intensity of --popout-modal-image | Must end in px | DEFAULT: 5px */
-  --popout-modal-size: cover; /* Size of the popout/modal image | DEFAUT: cover | OPTIONS: cover, contain */
-  --popout-modal-position: center; /* Position of popout/modal image | DEAFULT: center | OPTIONS: top, right, bottom, left, center */
+   --rs-small-width: 2px; /* Thickness of status border for members list/dms | MUST end in px */
+   --rs-medium-width: 2px; /* Thickness of status border for User popout | MUST end in px */
+   --rs-large-width: 2px; /* Thickness of status border for User profile | MUST end in px */
 
-  /* Brightness variables */
-  --serverlist-brightness: 0.6; /* Brightness for serverlist | 0 - 1 (decimals allowed) | DEFAULT: 0.8 */
-  --left-brightness: 0.5; /* Channels and DM list brightness | 0 - 1 (decimals allowed) | DEFAULT: 0.8 */
-  --middle-brightness: 0.5; /* Chat brightness | 0 - 1 (decimals allowed) | DEFAULT: 0.6 */
-  --right-brightness: 0; /* Members and Now Playing brightness | 0 - 1 (decimals allowed) | DEFAULT: 0 */
-  --popout-modal-brightness: 0.5; /* Brightness for popouts and modals | 0 - 1 (decimals allowed) | DEFAULT: 0.75 */
+   --rs-avatar-shape: 50%; /* 50% for round - 0% for square */
 
-  /* Other variables */
-  --scrollbar-colour: rgba(255,255,255,0.05); /* DEFAULT: rgba(255,255,255,0.05) */
-  --link-colour: #00b0f4; /* DEFAULT: #00b0f4 */
-  --show-gift-gif-buttons: none; /* Show buttons: block | Hide buttons: none | DEFAULT: none */
+   --rs-online-color: #43b581; /* Colour for online status */
+   --rs-idle-color: #faa61a; /* Colour for idle status */
+   --rs-dnd-color: #f04747; /* Colour for dnd status */
+   --rs-offline-color: #636b75; /* Colour for offline status */
+   --rs-streaming-color: #643da7; /* Colour for streaming status */
+   --rs-invisible-color: #747f8d; /* Colour for invisible status - Note: this will only show for your own invisibility */
+   --rs-phone-color: var(--rs-online-color); /* Colour of the ring and phone icon when a user is on their phone |  */
 
-  /* Do not touch */
-  --update-notice-1: none;
-}
+   --rs-phone-visible: block; /* Visibility of the phone icon next to a users avatar. | block = visible | none = hidden */
+ }
 
-:root {
-  --TB-top: calc(var(--server-container) + var(--window-padding));
-  --TB-tr-roundness: var(--window-roundness);
-  --TB-position-top: var(--TB-top, var(--window-padding));
-  --TB-position-right: var(--window-padding);
-  --tint: rgba(var(--tint-colour), var(--tint-brightness));
-  --white-half: rgba(47, 22, 190, 0.712);
-  --white: rgba(255, 255, 255, 0.055);
-  --white-double: rgba(105, 105, 105, 0.89);
-  --white-triple: rgba(255, 255, 255, 0.15);
-  --gradient: linear-gradient(var(--gradient-direction), rgb(var(--gradient-primary)), rgb(var(--gradient-secondary)));
-  --gradient-20: linear-gradient(var(--gradient-direction), rgba(var(--gradient-primary), 0.2), rgba(var(--gradient-secondary), 0.2));
-  --gradient-50: linear-gradient(var(--gradient-direction), rgba(var(--gradient-primary), 0.5), rgba(var(--gradient-secondary), 0.5));
-  --gradient-90: linear-gradient(var(--gradient-direction), rgba(var(--gradient-primary), 0.9), rgba(var(--gradient-secondary), 0.9));
-  --text-shadow: 1;
-  --chat-embed: var(--background-secondary);
-  --discord-green: 67,181,129;
-  --discord-yellow: 219,171,9;
-  --discord-red: 215,58,73;
-  --discord-purple: 89,54,149;
-  --discord-invisible: 117,128,142;
-  --discord-nitro: 255,115,250;
-  --discord-blurple: 114,137,218;
-  --discord-spotify: 29,185,84;
-  --discord-twitch: 89,54,149;
-  --discord-xbox: 16,124,16;
-  --version: "Frosted Glass 2.0.8";
-
-  /* Radial Status */
-  --rs-small-spacing: 2px;
-  --rs-large-spacing: 3px;
-  --rs-width: 2px;
-  --rs-avatar-shape: 50%;
-  --rs-online-color: #43b581;
-  --rs-idle-color: #faa61a;
-  --rs-dnd-color: #f04747;
-  --rs-offline-color: #636b75;
-  --rs-streaming-color: #643da7;
-  --rs-invisible-color: #747f8d;
-}
-  
-  
   .fullscreen-bg video,
   .fullscreen-bg-video{
     position: fixed;
@@ -93,8 +43,8 @@
     height: auto;
     transform: translate(-50%, -50%);
   }
-  
-.theme-dark {
+
+  .theme-dark {
   --header-primary: #f7a8b8;
   --header-secondary: #bbb;
   --text-normal: #fff;
@@ -107,7 +57,7 @@
   --interactive-active:#f7a8b8;
   --interactive-muted: rgb(95, 95, 95);
   --background-primary: transparent;
-  --background-secondary: rgba(0,0,0,0.3);
+  --background-secondary: rgba(0,0,0,0.4);
   --background-secondary-alt: transparent;
   --background-tertiary: transparent;
   --background-accent: #4f545c;
@@ -145,10 +95,9 @@
 
 .theme-dark{
     /*change last value from 0.0-1.0 to adjust brightness*/
-  --background-tertiary: rgba(25, 25, 25, 0.4); 
+  --background-tertiary: rgba(25, 25, 25, 0.4);
   --background-primary: transparent;
   --background-secondary: transparent;
   --background-secondary-alt: transparent;
   --channeltextarea-background: transparent;
   }
-
