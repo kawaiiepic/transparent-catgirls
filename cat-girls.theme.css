@@ -6,9 +6,9 @@
  * @source https://github.com/catppuccin/discord
 */
 
- @import url("https://discordstyles.github.io/HorizontalServerList/dist/HorizontalServerList.css");
+ @import url('https://discordstyles.github.io/HorizontalServerList/dist/HorizontalServerList.css');
  @import url('https://raw.githubusercontent.com/DiscordStyles/RadialStatus/deploy/RadialStatus.theme.css');
- @import url(https://overimagine1.github.io/old-discord-font/source.css);
+ @import url('https://overimagine1.github.io/old-discord-font/source.css');
 
 :root {
 	/*                 H     S     L */
