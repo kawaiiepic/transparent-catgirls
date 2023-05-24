@@ -7,7 +7,7 @@
 */
 
  @import url('https://discordstyles.github.io/HorizontalServerList/dist/HorizontalServerList.css');
- @import url('https://raw.githubusercontent.com/DiscordStyles/RadialStatus/deploy/RadialStatus.theme.css');
+ /** @import url('https://raw.githubusercontent.com/DiscordStyles/RadialStatus/deploy/RadialStatus.theme.css'); Removed due to being broken */ 
  @import url('https://overimagine1.github.io/old-discord-font/source.css');
 
 :root {
