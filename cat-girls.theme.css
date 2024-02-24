@@ -6,9 +6,8 @@
  * @source https://github.com/catppuccin/discord
 */
 
- /** @import url('https://discordstyles.github.io/HorizontalServerList/dist/HorizontalServerList.css'); */
- /** @import url('https://raw.githubusercontent.com/DiscordStyles/RadialStatus/deploy/RadialStatus.theme.css'); Removed due to being broken */ 
- /* @import url('https://overimagine1.github.io/old-discord-font/source.css'); */
+  @import url('https://discordstyles.github.io/HorizontalServerList/dist/HorizontalServerList.css');
+  
 button[class*=emojiButtonNormal] > div > div {
   filter: grayscale(0.77) hue-rotate(185deg) brightness(1.02) opacity(100%) !important;
 }
@@ -64,21 +63,14 @@ html {
 
 .theme-dark,
 .theme-light {
-  --header-primary: #cdd6f4;
-  --header-secondary: #a6adc8;
-  --text-normal: #cdd6f4;
-  --text-muted: #a6adc8;
-  --text-link: #89b4fa;
   --text-link-low-saturation: #74c7ec;
   --text-positive: #a6e3a1;
   --text-warning: #f9e2af;
   --text-danger: #f38ba8;
-  --text-brand: #89b4fa;
   --background-primary: #1e1e2e;
   --background-secondary: #181825;
   --background-secondary-alt: #14141f;
   --background-tertiary: #11111b;
-  --background-accent: #89b4fa;
   --background-floating: #0d0d15;
   --background-nested-floating: #181825;
   --background-mobile-primary: #1e1e2e;
@@ -225,7 +217,6 @@ html {
   --deprecated-text-input-border-disabled: #181825;
   --deprecated-text-input-prefix: #a6adc8;
   --focus-primary: #89b4fa;
-  --interactive-normal: #cdd6f4;
   --interactive-muted: rgba(205, 214, 244, 0.3);
   --interactive-hover: #cdd6f4;
   --interactive-active: #cdd6f4;
