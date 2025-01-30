@@ -6,7 +6,7 @@
  * @source https://github.com/catppuccin/discord
 */
 
-  @import url('https://discordstyles.github.io/HorizontalServerList/dist/HorizontalServerList.css');
+  @import url('https://raw.githubusercontent.com/DiscordStyles/HorizontalServerList/deploy/HorizontalServerList.theme.css');
   
 button[class*=emojiButtonNormal] > div > div {
   filter: grayscale(0.77) hue-rotate(185deg) brightness(1.02) opacity(100%) !important;
